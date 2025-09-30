@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Hack Regular";
+  src:
+    /* local("Hack"), */
+    url("fonts/Hack/hacknerdfont-regular.ttf")
+}
+
+:root {
+  --background: #2a2a3b;
+  --primary: #f1f1f1;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--primary);
+  font-family: "Hack Regular";
+}
+
+header {
+  color: var(--primary);
+  font-family: "Hack Regular";
+}
+
+a {
+  color: var(--primary);
+  font-family: "Hack Regular";
+}
