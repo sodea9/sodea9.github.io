@@ -35,15 +35,64 @@ header {
   right: 20px;
 }
 
+#socialsDiv p {
+  font-size: 1.1rem;
+}
+
 #icons {
   display: flex;
   column-gap: 3px;
+}
+
+#navBar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.secondaryText {
+  color: var(--secondary);
 }
 
 .icon {
   color: var(--primary);
 }
 
-.secondaryText {
-  color: var(--secondary);
+.navOption {
+  position: relative;
+  font-size: 1.2rem;
+  /* border: solid; */
+  /* border-width: 1px; */
+}
+
+.navOption a {
+  display: block;
+  text-align: center;
+  padding: 14px 26px;
+  text-decoration: none;
+  color: var(--primary)
+
+}
+
+.navOption:hover {
+  padding-top: 5px;
+}
+
+.navOption .onHover {
+  display: none;
+}
+
+.navOption:hover .offHover{
+  display: none
+}
+
+.navOption:hover .onHover{
+  display: inline;
+}
+
+.ghostText {
+  color: var(--background)
 }
