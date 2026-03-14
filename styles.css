@@ -17,6 +17,25 @@ body {
   font-family: "Hack Regular", monospace;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: solid thin;
+  border-color: #888888;
+  color: #888888;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 0;
+  font-size: 0.8rem;
+}
+
+footer p {
+  margin: 0;
+}
+
 .bordered {
   border: solid 2px;
 }
