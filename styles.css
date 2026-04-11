@@ -36,6 +36,12 @@ footer p {
   margin: 0;
 }
 
+/* in-text links */
+p a {
+  text-decoration: underline;
+  color: var(--primary);
+}
+
 .bordered {
   border: solid 2px;
 }
@@ -63,8 +69,14 @@ footer p {
   color: var(--primary);
 }
 
+.textContainer {
+  width: 60%;
+  margin: 0 auto;
+}
+
 .minorNav {
   margin-top: 25px;
+  margin-bottom: 40px;
 }
 
 .navOption {
