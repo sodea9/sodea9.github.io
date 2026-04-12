@@ -133,6 +133,26 @@ p a {
   color: var(--background)
 }
 
+.blogTitleContainer {
+  border-bottom: solid 1px; 
+  display: flex;
+}
+
+.blogTitleText {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.blogDateText {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.blogContentContainer {
+  border-top: solid 1px;
+  line-height: 1.3;
+}
+
 #logo {
   margin: 0 auto;
 }
