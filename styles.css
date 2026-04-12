@@ -48,6 +48,7 @@ p a {
 
 .bordered {
   border: solid 2px;
+  padding: 0 10px;
 }
 
 .mainHeader {
@@ -74,7 +75,7 @@ p a {
 }
 
 .textContainer {
-  width: 60%;
+  width: 63%;
   margin: 0 auto;
   font-size: 1.1rem;
 }
@@ -86,8 +87,6 @@ p a {
 
 .navOption {
   font-size: 1.2rem;
-  /* border: solid; */
-  /* border-width: 1px; */
 }
 
 .navOption a {
@@ -170,5 +169,6 @@ p a {
   overflow: hidden;
   display: flex;
   justify-content: center;
+  margin-bottom: 40px;
 }
 
