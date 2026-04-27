@@ -83,7 +83,7 @@ p a {
 }
 
 .textContainer {
-  width: 63%;
+  width: 64%;
   margin: 0 auto;
   font-size: 1.1rem;
 }
@@ -105,6 +105,21 @@ p a {
   padding: 0;
   margin: 0 auto 20px auto;
   align-self: center;
+}
+
+.videoGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.gridElement {
+  padding: 20px;
+}
+
+.musicVideo {
+  width: 100%;
+  aspect-ratio: 16/9;
+  padding: 0;
 }
 
 .contentText {
