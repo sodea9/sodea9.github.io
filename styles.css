@@ -9,6 +9,7 @@
   --background: #2a2a3b;
   --primary: #f1f1f1;
   --secondary: #fa4d4d;
+  --radius: 0px;
 }
 
 body {
@@ -37,6 +38,10 @@ h2 {
   margin-bottom: 8px;
 }
 
+a {
+  color: var(--primary);
+}
+
 footer p {
   margin: 0;
 }
@@ -47,19 +52,15 @@ p a {
   color: var(--primary);
 }
 
-.whitespace {
-  
-}
-
 .bordered {
   border: solid 2px;
+  border-radius: var(--radius);
   padding: 0 16px;
 }
 
 .mainHeader {
   display: flex;
   align-items: center;
-  /* border-bottom: thin solid; */
 }
 
 .minorHeader {
@@ -91,18 +92,14 @@ p a {
 
 .navOption {
   font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .navOption a {
-  display: block;
-  text-align: center;
-  padding: 0px 20px;
+  padding: 0 0;
   text-decoration: none;
-  color: var(--primary)
-}
-
-.navOption:hover {
-  /* padding-top: 5px; */
 }
 
 .navOption .onHover {
@@ -120,13 +117,64 @@ p a {
 .navOptionActive a {
   display: block;
   text-align: center;
-  padding: 0px 20px;
+  padding: 0 0;
   text-decoration: none;
   color: var(--primary)
 }
 
 .navOptionActive {
   font-size: 1.2rem;
+}
+
+/* absolute positioning to allow proper spacing */
+/* between nav bar titles */
+/* kind of hacky but it works */
+.subOptionsContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4px;
+  padding: 4px;
+  position: absolute;
+  top: 18px;
+  background-color: var(--background);
+  border: solid 2px;
+  border-radius: var(--radius);
+}
+
+.subOption {
+  padding: 0;
+  margin: 0;
+  font-size: 14px; 
+  white-space: nowrap;
+  text-wrap: nowrap;
+}
+
+.subOption .onHoverSub {
+  display: none;
+}
+
+.subOption:hover .offHoverSub{
+  display: none
+}
+
+.subOption:hover .onHoverSub{
+  display: inline;
+}
+
+.hoverText {
+  color: var(--background)
+}
+
+.hoverTextSub {
+  color: var(--background)
+}
+
+.navOption:hover .hoverText {
+  color: var(--primary)
+}
+
+.subOption:hover .hoverTextSub {
+  color: var(--primary)
 }
 
 .ghostText {
@@ -188,12 +236,13 @@ p a {
 
 #navBar {
   list-style-type: none;
-  margin: 0;
   padding: 0;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
+  margin: 0 auto 40px auto;
+  width: 40%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: min-content;
+  justify-content: space-between;
 }
 
 #featured {
