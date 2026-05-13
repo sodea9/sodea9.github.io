@@ -114,46 +114,8 @@ p a {
   align-self: center;
 }
 
-.videoGrid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .gridElement {
   padding: 20px;
-}
-
-.musicVideo {
-  width: 100%;
-  aspect-ratio: 16/9;
-  padding: 0;
-}
-
-.filmVideo {
-  align-self: center;
-  width: 70%;
-  aspect-ratio: 16/9;
-  padding: 0;
-  margin-bottom: 16px;
-}
-
-.gridImage {
-  width: 100%;
-  height: auto;
-  padding: 0;
-  align-self: center;
-}
-
-.photoGrid {
-  display: flex;
-  /* grid-template-columns: repeat(3, minmax(0, 1fr)); */
-  padding-bottom: 22px;
-  border-bottom: solid 2px;
-  margin-bottom: 40px;
-}
-
-.photoColumn {
-  width: 33%;
 }
 
 .hline {
