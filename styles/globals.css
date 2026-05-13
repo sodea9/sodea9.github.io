@@ -145,11 +145,15 @@ p a {
 }
 
 .photoGrid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: flex;
+  /* grid-template-columns: repeat(3, minmax(0, 1fr)); */
   padding-bottom: 22px;
   border-bottom: solid 2px;
   margin-bottom: 40px;
+}
+
+.photoColumn {
+  width: 33%;
 }
 
 .hline {
