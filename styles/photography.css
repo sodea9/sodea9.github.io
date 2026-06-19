@@ -7,7 +7,6 @@
 
 .photoGrid {
   display: flex;
-  /* grid-template-columns: repeat(3, minmax(0, 1fr)); */
   padding-bottom: 22px;
   border-bottom: solid 2px;
   margin-bottom: 40px;
