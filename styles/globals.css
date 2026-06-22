@@ -1,0 +1,190 @@
+@font-face {
+  font-family: "Hack Regular";
+  src:
+    /* local("Hack"), */
+    url("../fonts/Hack/hacknerdfont-regular.ttf")
+}
+
+:root {
+  --background: #2a2a3b;
+  --primary: #f1f1f1;
+  --secondary: #969696;
+  --accent: #fa4d4d;
+  --radius: 0px;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--primary);
+  font-family: "Hack Regular", monospace;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: solid thin;
+  border-color: #888888;
+  color: #888888;
+  bottom: 0;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 0.8rem;
+  margin-top: 150px;
+}
+
+a {
+  color: var(--primary);
+}
+
+footer p {
+  margin: 0;
+}
+
+/* in-text links */
+p a {
+  text-decoration: underline;
+  color: var(--primary);
+}
+
+.bordered {
+  border: solid 2px;
+  border-radius: var(--radius);
+  padding: 0 16px;
+}
+
+.mainHeader {
+  display: flex;
+  align-items: center;
+}
+
+.minorHeader {
+  z-index: 2;
+  position: absolute;
+  left: 15px;
+  top: 4px;
+  display: flex;
+  align-items: center;
+  font-size: 0.5rem;
+}
+
+.secondaryText {
+  color: var(--secondary);
+}
+
+.icon {
+  color: var(--primary);
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  width: 64%;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+.pageIntro {
+  align-self: center;
+}
+
+.contentContainer {
+  width: 63%;
+  margin: 20px auto;
+  padding: 20px 20px;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3rem;
+}
+
+.aboutContent {
+  line-height:1.3;
+  width: 64%;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+.aboutContent h2{
+  margin-top: 30px;
+  margin-bottom: 8px;
+}
+
+.image {
+  width: 60%;
+  height: auto;
+  margin-top: 20px;
+  padding: 0;
+  margin: 0 auto 20px auto;
+  align-self: center;
+}
+
+.pdf {
+  width: 100%;
+  height: 600px;
+  margin: 0;
+  margin-top: 8px;
+  padding: 0;
+}
+
+.gridElement {
+  padding: 20px;
+}
+
+.hline {
+  width: 100%;
+  align-self: center;
+  border-bottom: solid 2px;
+  margin: 0 10px;
+}
+
+.photoAlbumHeader {
+  display:flex; 
+  align-items: center;
+}
+
+.photoAlbumHeader h2 {
+  margin: 4px 0;
+  white-space: nowrap;
+}
+
+.contentText {
+  margin: 4px 0;
+}
+
+.leftText {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.rightText {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.flexLineBreak {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.hoverText {
+  color: var(--background)
+}
+
+.hoverTextSub {
+  color: var(--background)
+}
+
+.ghostText {
+  color: var(--background)
+}
+
+#logo {
+  margin: 0 auto;
+}
+
+#logo a {
+  color: var(--primary);
+  text-decoration: none;
+}

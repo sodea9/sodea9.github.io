@@ -1,0 +1,17 @@
+.gridImage {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  align-self: center;
+}
+
+.photoGrid {
+  display: flex;
+  padding-bottom: 22px;
+  border-bottom: solid 2px;
+  margin-bottom: 40px;
+}
+
+.photoColumn {
+  width: 33%;
+}

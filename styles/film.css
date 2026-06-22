@@ -1,0 +1,7 @@
+.filmVideo {
+  align-self: center;
+  width: 70%;
+  aspect-ratio: 16/9;
+  padding: 0;
+  margin-bottom: 16px;
+}
