@@ -2,7 +2,7 @@
   font-family: "Hack Regular";
   src:
     /* local("Hack"), */
-    url("../fonts/Hack/hacknerdfont-regular.ttf")
+    url("/fonts/Hack/HackNerdFont-Regular.ttf")
 }
 
 :root {
