@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sean O'Dea</title>
-    <link rel="stylesheet" href="/styles/blog.css">
     <link rel="stylesheet" href="/styles/globals.css">
     <link rel="stylesheet" href="/styles/nav.css">
+    <script src="index.js"></script>
   </head>
   <body>
     <header class=minorHeader>
@@ -80,7 +80,7 @@
 
         <li class=navOption>
           <a href="/writing/">
-            WRITING<span class=hoverText>/</span>
+            WRITING/
           </a>
           <div class="subOptionsContainer onHover">
             <div class=subOption>├─ 
@@ -108,7 +108,7 @@
 
         <li class=navOption>
           <a href="/blog/">
-            BLOG/
+            BLOG<span class=hoverText>/</span>
           </a>
         </li>
 
@@ -136,12 +136,22 @@
       </ul>
     </nav>
 
-    <div class=directoryContainer>
-      <h2>2026</h2>
-      <a href="/blog/4-6-26" class=contentText>My Tentative Philosophy on Generative AI - 4/6/2026</a>
+    <div class=textContainer>
+      <div class=backButton>
+        <a href="/writing/">&lt;&lt;</a>
+      </div>
     </div>
 
-    <footer class=partialFooter>
+    <div class="bordered contentContainer">
+      <div style="display:flex">
+        <h3 class="contentText leftText">Perseus Mission Logs</h3>
+        <p class="contentText rightText">2024</p>
+      </div>
+      <p class="contentText secondaryText">Final project for a bio-astronomy course imagining a fictional star system harboring intelligent life. Told through a sci-fi narrative set 1000 years in the future following the crew of Andromeda, the first humans to come in contact with intelligent extraterrestrial life. The Perseus crew was launched as a rescue mission to retrieve Andromeda and ultimately recovered their mission logs. The species that ultimately pushed them to their despise, <em>Hermenis Pyrensus</em>, is a fungus with a hivemind-like hyperintelligence, capable of rapid expansion, movement, and construction. </p>
+      <embed src="/documents/perseus.pdf" class="bordered pdf" type="application/pdf">
+    </div>
+
+    <footer>
       <p>&copy; 2026 Sean O'Dea</p>
       <p>O'Dea Software (OS)</p>
     </footer>
