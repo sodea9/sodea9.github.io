@@ -5,39 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>sodea.dev</title>
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/globals.css">
-    <link rel="stylesheet" href="styles/nav.css">
-    <script src="https://kit.fontawesome.com/d754d5e08c.js" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="/styles/globals.css">
+    <link rel="stylesheet" href="/styles/nav.css">
   </head>
   <body>
-    <header class=mainHeader>
+    <header class=minorHeader>
       <pre id=logo>
-                                                                     ___
-   ________     ________    _____       ___    ___        ________  |  /  ______      ________   _____ 
-  /  _____/    /  _____/   /  __ |     /   |  /  /|      /  ___  /| |_// /  _   \    /  _____/  /  __ |
- /  /_____/   /  /_____/  /  / | |    /    | /  / /     /  /  / / / |_/ /  / \  /\  /  /_____/ /  / | |
- \____  \    /  ____/    /  /__| |   /  /| |/  / /     /  /  / / /     /  /  / / / /  ____/   /  /__| |
-_____/  /\  /  /____/   /  ____  |  /  / |    / /     /  /__/ / /     /  /__/ / / /  /____/  /  ____  |
-\______/ / /________/  /__/___|__| /__/ /|___/ /     /_______/ /     /_______/ / /________/ /__/___|__|
-\_______/  |________/  |__|   |__| |__|/ |___|/      |_______|/      |_______|/  |________/ |__|   |__|
-
+        <a href="/">
+       __                      _
+      / _ ________   ________  _\ 
+     / / /  ___  /| /  _____/   /\
+    / / /  /  / / //  /_____/  / /
+   / / /  /  / / / \____  \   / /
+  / / /  /_ / / / _____/  /\ / /
+ / / /_______/ /  \______/ // /
+ \/_ |_______|/   \_______// /
+ \__                      __/
+        </a>
       </pre>
-
-      <div class=bordered id=socialsDiv>
-        <p id=socials>SOCIALS</p>
-        <div id=icons>
-          <a class=icon href="https://github.com/sodea9" target=_blank><i class="fa-brands fa-github fa-lg"></i></a>
-          <a class=icon href="https://www.linkedin.com/in/sodea9/" target=_blank><i class="fa-brands fa-linkedin fa-lg"></i></a>
-          <a class=icon href="https://www.youtube.com/@seanodea8602" target=_blank><i class="fa-brands fa-youtube fa-lg"></i></a>
-          <a class=icon href="https://letterboxd.com/sodea9/" target=_blank><i class="fa-brands fa-letterboxd fa-lg"></i></a>
-          <a class=icon href="https://www.goodreads.com/user/show/162083874-sean-o-dea" target=_blank><i class="fa-brands fa-goodreads-g fa-lg"></i></a>
-        </div>
-      </div>
     </header>
-
-    <nav>
+    <nav class=minorNav>
       <ul id=navBar>
         <li class=navOption>
           <a href="/code/">
@@ -54,7 +41,7 @@ _____/  /\  /  /____/   /  ____  |  /  / |    / /     /  /__/ / /     /  /__/ / 
                 <span class=hoverTextSub>[</span><span class=hoverText>professional</span><span class=hoverTextSub>]</span>
               </a>
             </div>
-            <div class=subOption>└─
+            <div class=subOption>└─ 
               <a href="/code/#school">
                 <span class=hoverTextSub>[</span><span class=hoverText>school</span><span class=hoverTextSub>]</span>
               </a>
@@ -92,11 +79,11 @@ _____/  /\  /  /____/   /  ____  |  /  / |    / /     /  /__/ / /     /  /__/ / 
 
         <li class=navOption>
           <a href="/writing/">
-            WRITING<span class=hoverText>/</span>
+            WRITING/
           </a>
           <div class="subOptionsContainer onHover">
             <div class=subOption>├─ 
-              <a href="./writing/#media">
+              <a href="/writing/#media">
                 <span class=hoverTextSub>[</span><span class=hoverText>media</span><span class=hoverTextSub>]</span>
               </a>
             </div>
@@ -123,6 +110,7 @@ _____/  /\  /  /____/   /  ____  |  /  / |    / /     /  /__/ / /     /  /__/ / 
             BLOG<span class=hoverText>/</span>
           </a>
         </li>
+
         <li class=navOption>
           <a href="/about/">
             ABOUT<span class=hoverText>/</span>
@@ -140,23 +128,31 @@ _____/  /\  /  /____/   /  ____  |  /  / |    / /     /  /__/ / /     /  /__/ / 
             </div>
             <div class=subOption>└─ 
               <a href="/about/#contact">
-                <span class=hoverTextSub>[</span><span class=hoverText>contact</span><span class=hoverTextSub>]</span>
-              </a>
+                <span class=hoverTextSub>[</span><span class=hoverText>contact</span><span class=hoverTextSub>]</span> </a>
             </div>
           </div>
         </li>
       </ul>
     </nav>
 
-    <div class=textContainer>
-      <div class=bordered>
-        <p>Welcome to my site! This is a collection of my works spread across various disciplines. My broad interests lie at the intersection of <span style="color:#f54242">art</span>, <span style="color:#42f54e">computing</span>, and <span style="color:#4263f5">mathematics</span>, particularly computer graphics, game engines, optimization, and low-level systems programming.</p>
-      </div>
-      <h2>Featured</h2>
-      <div class=bordered id=featured>
-        <img src="/images/code/bary.png" alt="screenshot of triangle visualizer" id=featuredImg class=bordered>
-        <p>I'm currently working on a utility for visualizing and plotting barycentric coordinates. This is useful for learning how trilinear interpolation over a triangle works (used in texture sampling, interpolating vertex normals, shader lighting, etc) or for categorizing things as a sum of three categories. Will be released soon after I add a few final features.
-      </div>
+    <div class="textContainer">
+      <p class=pageIntro>For more film and book reviews check out my <a href="https://letterboxd.com/sodea9/" target="_blank">Letterboxd</a> and <a href="https://www.goodreads.com/user/show/162083874-sean-o-dea" target="_blank">Goodreads</a>!</p>
+    </div>
+
+    <div class=directoryContainer>
+      <h2 id="media">Media</h2>
+      <a href="/writing/the-plague" class=contentText class=directoryEntry style=directoryEntry>The Plague</a>
+      <h2 id="essays">Essays</h2>
+      <a href="/writing/accurate-humans-in-virtual-worlds" class=contentText class=directoryEntry style=directoryEntry>Accurate Humans in Virtual Worlds</a>
+      <a href="/writing/awe-and-the-sublime-in-cinema" class=contentText class=directoryEntry style=directoryEntry>Awe and the Sublime in Cinema</a>
+      <a href="/writing/the-color-line" class=contentText class=directoryEntry style=directoryEntry>The Color Line: Du Bois' Global Imperative</a>
+      <a href="/writing/separating-art-and-artist" class=contentText class=directoryEntry style=directoryEntry>Separating Art and Artist</a>
+      <a href="/writing/just-a-burning-memory" class=contentText class=directoryEntry style=directoryEntry>Just a Burning Memory</a>
+      <h2 id="research">Research</h2>
+      <a href="/writing/cve-2014-2299" class=contentText class=directoryEntry style=directoryEntry>CVE-2014-2299: An Analysis of a Wireshark MPEG Parsing Vulnerability</a>
+      <a href="/writing/keeping-up-with-the-times" class=contentText class=directoryEntry style=directoryEntry>Keeping Up with the Times – How Universities Can Integrate LLMs into Software Engineering Education to Better Prepare Students for an AI-Driven Future</a>
+      <h2 id="creative">Creative</h2>
+      <a href="/writing/perseus-mission-logs" class=contentText class=directoryEntry style=directoryEntry>Perseus Mission Logs</a>
     </div>
 
     <footer>

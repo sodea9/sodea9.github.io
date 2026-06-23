@@ -5,39 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>sodea.dev</title>
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/globals.css">
-    <link rel="stylesheet" href="styles/nav.css">
-    <script src="https://kit.fontawesome.com/d754d5e08c.js" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="/styles/globals.css">
+    <link rel="stylesheet" href="/styles/nav.css">
   </head>
   <body>
-    <header class=mainHeader>
+    <header class=minorHeader>
       <pre id=logo>
-                                                                     ___
-   ________     ________    _____       ___    ___        ________  |  /  ______      ________   _____ 
-  /  _____/    /  _____/   /  __ |     /   |  /  /|      /  ___  /| |_// /  _   \    /  _____/  /  __ |
- /  /_____/   /  /_____/  /  / | |    /    | /  / /     /  /  / / / |_/ /  / \  /\  /  /_____/ /  / | |
- \____  \    /  ____/    /  /__| |   /  /| |/  / /     /  /  / / /     /  /  / / / /  ____/   /  /__| |
-_____/  /\  /  /____/   /  ____  |  /  / |    / /     /  /__/ / /     /  /__/ / / /  /____/  /  ____  |
-\______/ / /________/  /__/___|__| /__/ /|___/ /     /_______/ /     /_______/ / /________/ /__/___|__|
-\_______/  |________/  |__|   |__| |__|/ |___|/      |_______|/      |_______|/  |________/ |__|   |__|
-
+        <a href="/">
+       __                      _
+      / _ ________   ________  _\ 
+     / / /  ___  /| /  _____/   /\
+    / / /  /  / / //  /_____/  / /
+   / / /  /  / / / \____  \   / /
+  / / /  /_ / / / _____/  /\ / /
+ / / /_______/ /  \______/ // /
+ \/_ |_______|/   \_______// /
+ \__                      __/
+        </a>
       </pre>
-
-      <div class=bordered id=socialsDiv>
-        <p id=socials>SOCIALS</p>
-        <div id=icons>
-          <a class=icon href="https://github.com/sodea9" target=_blank><i class="fa-brands fa-github fa-lg"></i></a>
-          <a class=icon href="https://www.linkedin.com/in/sodea9/" target=_blank><i class="fa-brands fa-linkedin fa-lg"></i></a>
-          <a class=icon href="https://www.youtube.com/@seanodea8602" target=_blank><i class="fa-brands fa-youtube fa-lg"></i></a>
-          <a class=icon href="https://letterboxd.com/sodea9/" target=_blank><i class="fa-brands fa-letterboxd fa-lg"></i></a>
-          <a class=icon href="https://www.goodreads.com/user/show/162083874-sean-o-dea" target=_blank><i class="fa-brands fa-goodreads-g fa-lg"></i></a>
-        </div>
-      </div>
     </header>
-
-    <nav>
+    <nav class=minorNav>
       <ul id=navBar>
         <li class=navOption>
           <a href="/code/">
@@ -54,7 +41,7 @@ _____/  /\  /  /____/   /  ____  |  /  / |    / /     /  /__/ / /     /  /__/ / 
                 <span class=hoverTextSub>[</span><span class=hoverText>professional</span><span class=hoverTextSub>]</span>
               </a>
             </div>
-            <div class=subOption>└─
+            <div class=subOption>└─ 
               <a href="/code/#school">
                 <span class=hoverTextSub>[</span><span class=hoverText>school</span><span class=hoverTextSub>]</span>
               </a>
@@ -96,7 +83,7 @@ _____/  /\  /  /____/   /  ____  |  /  / |    / /     /  /__/ / /     /  /__/ / 
           </a>
           <div class="subOptionsContainer onHover">
             <div class=subOption>├─ 
-              <a href="./writing/#media">
+              <a href="/writing/#media">
                 <span class=hoverTextSub>[</span><span class=hoverText>media</span><span class=hoverTextSub>]</span>
               </a>
             </div>
@@ -123,9 +110,10 @@ _____/  /\  /  /____/   /  ____  |  /  / |    / /     /  /__/ / /     /  /__/ / 
             BLOG<span class=hoverText>/</span>
           </a>
         </li>
+
         <li class=navOption>
           <a href="/about/">
-            ABOUT<span class=hoverText>/</span>
+            ABOUT/
           </a>
           <div class="subOptionsContainer onHover">
             <div class=subOption>├─ 
@@ -140,23 +128,24 @@ _____/  /\  /  /____/   /  ____  |  /  / |    / /     /  /__/ / /     /  /__/ / 
             </div>
             <div class=subOption>└─ 
               <a href="/about/#contact">
-                <span class=hoverTextSub>[</span><span class=hoverText>contact</span><span class=hoverTextSub>]</span>
-              </a>
+                <span class=hoverTextSub>[</span><span class=hoverText>contact</span><span class=hoverTextSub>]</span> </a>
             </div>
           </div>
         </li>
       </ul>
     </nav>
 
-    <div class=textContainer>
-      <div class=bordered>
-        <p>Welcome to my site! This is a collection of my works spread across various disciplines. My broad interests lie at the intersection of <span style="color:#f54242">art</span>, <span style="color:#42f54e">computing</span>, and <span style="color:#4263f5">mathematics</span>, particularly computer graphics, game engines, optimization, and low-level systems programming.</p>
-      </div>
-      <h2>Featured</h2>
-      <div class=bordered id=featured>
-        <img src="/images/code/bary.png" alt="screenshot of triangle visualizer" id=featuredImg class=bordered>
-        <p>I'm currently working on a utility for visualizing and plotting barycentric coordinates. This is useful for learning how trilinear interpolation over a triangle works (used in texture sampling, interpolating vertex normals, shader lighting, etc) or for categorizing things as a sum of three categories. Will be released soon after I add a few final features.
-      </div>
+    <div class="aboutContent bordered">
+      <h2 id=site>About This Site</h2>
+      <p>This site was built by hand using a vanilla HTML, CSS, Javascript stack, and is hosted for free on GitHub Pages. This was generally motivated by simplicity, performance, and a bit of nostalgia for a lost age of the internet. I also designed the UI while taking inspiration from <a href="https://adventofcode.com/" target="_blank">Advent of Code</a> and the artwork of <a href="https://citizensleeper.com/" target="_blank">Citizen Sleeper</a>.</p>
+      <h2 id=me>About Me</h2>
+      <p>Originally from rural Western Massachusetts, I'm a recent graduate from the University of Massachusetts Amherst with a BSc. Computer Science and BSc. Mathematics. Most of my hobbies are what you'll find here but I also enjoy running, reading, watching films, and learning German (~B1).</p>
+      <p>I was previously a Software Engineer Intern at <a href="https://www.financialpartners.com/" target="_blank">Farm Credit Financial Partners</a>, a fintech company based in Springfield, MA, and a Software Developer for <a href="https://www.buildumass.com/">BUILD UMass</a>, a student-run pro-bono tech consulting group servicing nonprofits and UMass orgs. I've worked on projects spanning much of the computer science field including full-stack software development (native, web, and mobile), embedded (software and hardware), cybersecurity (exploitation and kill-chains), reverse engineering, computer graphics, computer vision, and LLM chatbots. Currently I'm looking for full-time positions in the low-level software sector.</p> 
+      <p>My technical and artistic endeavors are often inspired in function by <a href="https://katherinemartinko.substack.com/p/what-is-digital-minimalism" target="_blank">digital minimalism</a>, and in form by <a href="https://en.wikipedia.org/wiki/Retrofuturism" target="_blank">retrofuturism</a>.</p>
+      <p>I typically prefer CLI environments (neovim and command-line build tools) for developing personal projects, but occasionally use VSCode for more complex or dependency-rich software projects. For my thoughts on AI, <a href="./blog.html#4-6-26">read this</a>.</p>
+      <h2 id=contact>Contact</h2>
+      <p>If you have any inquiries or just want to have an interesting chat feel free to reach out!</p>
+      <p>The best way to contact me is by email (seanodea09[at]gmail[dot]com), LinkedIn message, or via carrier pigeon.</p>
     </div>
 
     <footer>

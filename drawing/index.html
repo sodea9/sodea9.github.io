@@ -5,39 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>sodea.dev</title>
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/globals.css">
-    <link rel="stylesheet" href="styles/nav.css">
-    <script src="https://kit.fontawesome.com/d754d5e08c.js" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="/styles/globals.css">
+    <link rel="stylesheet" href="/styles/nav.css">
   </head>
   <body>
-    <header class=mainHeader>
-      <pre id=logo>
-                                                                     ___
-   ________     ________    _____       ___    ___        ________  |  /  ______      ________   _____ 
-  /  _____/    /  _____/   /  __ |     /   |  /  /|      /  ___  /| |_// /  _   \    /  _____/  /  __ |
- /  /_____/   /  /_____/  /  / | |    /    | /  / /     /  /  / / / |_/ /  / \  /\  /  /_____/ /  / | |
- \____  \    /  ____/    /  /__| |   /  /| |/  / /     /  /  / / /     /  /  / / / /  ____/   /  /__| |
-_____/  /\  /  /____/   /  ____  |  /  / |    / /     /  /__/ / /     /  /__/ / / /  /____/  /  ____  |
-\______/ / /________/  /__/___|__| /__/ /|___/ /     /_______/ /     /_______/ / /________/ /__/___|__|
-\_______/  |________/  |__|   |__| |__|/ |___|/      |_______|/      |_______|/  |________/ |__|   |__|
-
-      </pre>
-
-      <div class=bordered id=socialsDiv>
-        <p id=socials>SOCIALS</p>
-        <div id=icons>
-          <a class=icon href="https://github.com/sodea9" target=_blank><i class="fa-brands fa-github fa-lg"></i></a>
-          <a class=icon href="https://www.linkedin.com/in/sodea9/" target=_blank><i class="fa-brands fa-linkedin fa-lg"></i></a>
-          <a class=icon href="https://www.youtube.com/@seanodea8602" target=_blank><i class="fa-brands fa-youtube fa-lg"></i></a>
-          <a class=icon href="https://letterboxd.com/sodea9/" target=_blank><i class="fa-brands fa-letterboxd fa-lg"></i></a>
-          <a class=icon href="https://www.goodreads.com/user/show/162083874-sean-o-dea" target=_blank><i class="fa-brands fa-goodreads-g fa-lg"></i></a>
-        </div>
-      </div>
+    <header class=minorHeader>
+        <pre id=logo>
+      <a href="/">
+       __                      _
+      / _ ________   ________  _\ 
+     / / /  ___  /| /  _____/   /\
+    / / /  /  / / //  /_____/  / /
+   / / /  /  / / / \____  \   / /
+  / / /  /_ / / / _____/  /\ / /
+ / / /_______/ /  \______/ // /
+ \/_ |_______|/   \_______// /
+ \__                      __/
+      </a>
+        </pre>
     </header>
-
-    <nav>
+    <nav class=minorNav>
       <ul id=navBar>
         <li class=navOption>
           <a href="/code/">
@@ -54,7 +41,7 @@ _____/  /\  /  /____/   /  ____  |  /  / |    / /     /  /__/ / /     /  /__/ / 
                 <span class=hoverTextSub>[</span><span class=hoverText>professional</span><span class=hoverTextSub>]</span>
               </a>
             </div>
-            <div class=subOption>└─
+            <div class=subOption>└─ 
               <a href="/code/#school">
                 <span class=hoverTextSub>[</span><span class=hoverText>school</span><span class=hoverTextSub>]</span>
               </a>
@@ -64,7 +51,7 @@ _____/  /\  /  /____/   /  ____  |  /  / |    / /     /  /__/ / /     /  /__/ / 
 
         <li class=navOption>
           <a>
-            ART<span class=hoverText>/</span>
+            ART/
           </a>
           <div class="subOptionsContainer onHover">
             <div class=subOption>├─ 
@@ -79,7 +66,7 @@ _____/  /\  /  /____/   /  ____  |  /  / |    / /     /  /__/ / /     /  /__/ / 
             </div>
             <div class=subOption>├─ 
               <a href="/drawing/">
-                <span class=hoverText>DRAWING</span><span class=hoverTextSub>/</span>
+                <span class=hoverText>DRAWING</span>/
               </a>
             </div>
             <div class=subOption>└─ 
@@ -96,7 +83,7 @@ _____/  /\  /  /____/   /  ____  |  /  / |    / /     /  /__/ / /     /  /__/ / 
           </a>
           <div class="subOptionsContainer onHover">
             <div class=subOption>├─ 
-              <a href="./writing/#media">
+              <a href="/writing/#media">
                 <span class=hoverTextSub>[</span><span class=hoverText>media</span><span class=hoverTextSub>]</span>
               </a>
             </div>
@@ -123,6 +110,7 @@ _____/  /\  /  /____/   /  ____  |  /  / |    / /     /  /__/ / /     /  /__/ / 
             BLOG<span class=hoverText>/</span>
           </a>
         </li>
+
         <li class=navOption>
           <a href="/about/">
             ABOUT<span class=hoverText>/</span>
@@ -140,23 +128,43 @@ _____/  /\  /  /____/   /  ____  |  /  / |    / /     /  /__/ / /     /  /__/ / 
             </div>
             <div class=subOption>└─ 
               <a href="/about/#contact">
-                <span class=hoverTextSub>[</span><span class=hoverText>contact</span><span class=hoverTextSub>]</span>
-              </a>
+                <span class=hoverTextSub>[</span><span class=hoverText>contact</span><span class=hoverTextSub>]</span> </a>
             </div>
           </div>
         </li>
       </ul>
     </nav>
 
-    <div class=textContainer>
-      <div class=bordered>
-        <p>Welcome to my site! This is a collection of my works spread across various disciplines. My broad interests lie at the intersection of <span style="color:#f54242">art</span>, <span style="color:#42f54e">computing</span>, and <span style="color:#4263f5">mathematics</span>, particularly computer graphics, game engines, optimization, and low-level systems programming.</p>
-      </div>
-      <h2>Featured</h2>
-      <div class=bordered id=featured>
-        <img src="/images/code/bary.png" alt="screenshot of triangle visualizer" id=featuredImg class=bordered>
-        <p>I'm currently working on a utility for visualizing and plotting barycentric coordinates. This is useful for learning how trilinear interpolation over a triangle works (used in texture sampling, interpolating vertex normals, shader lighting, etc) or for categorizing things as a sum of three categories. Will be released soon after I add a few final features.
-      </div>
+    <div class="textContainer">
+      <p class=pageIntro>Some cool things I've drawn or painted over the years. Might do some more someday soon.</p>
+    </div>
+
+    <div class="bordered contentContainer">
+      <img src="/images/art/floyd.JPG" alt="an acrylic painting of the Dark Side of the Moon album cover on a ceiling tile" class="bordered image">
+      <h3 class=contentText>Dark Side of the Moon</h3>
+      <p class=contentText>2022</p>
+      <p class="contentText secondaryText">acrylic on ceiling tile</p>
+    </div>
+
+    <div class="bordered contentContainer">
+      <img src="/images/art/blue_spirit.jpg" alt="a pencil drawing of the Blue Spirit mask from Avatar the Last Airbender" class="bordered image">
+      <h3 class=contentText>Blue Spirit Mask</h3>
+      <p class=contentText>2020</p>
+      <p class="contentText secondaryText">pencil & paper</p>
+    </div>
+
+    <div class="bordered contentContainer">
+      <img src="/images/art/zuko_aang.jpg" alt="a pencil drawing of Zuko and Aang standing back to back" class="bordered image">
+      <h3 class=contentText>Zuko and Aang Meet the Dragons</h3>
+      <p class=contentText>2020</p>
+      <p class="contentText secondaryText">pencil & paper</p>
+    </div>
+
+    <div class="bordered contentContainer">
+      <img src="/images/art/bhm.JPG" alt="a pencil drawing of the Black History Month Kyrie 5" class="bordered image">
+      <h3 class=contentText>BHM Kyrie 5</h3>
+      <p class=contentText>2018</p>
+      <p class="contentText secondaryText">pencil & paper</p>
     </div>
 
     <footer>

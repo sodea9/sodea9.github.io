@@ -2,7 +2,7 @@
   font-family: "Hack Regular";
   src:
     /* local("Hack"), */
-    url("../fonts/Hack/hacknerdfont-regular.ttf")
+    url("/fonts/Hack/HackNerdFont-Regular.ttf")
 }
 
 :root {
@@ -27,9 +27,25 @@ footer {
   border-top: solid thin;
   border-color: #888888;
   color: #888888;
-  bottom: 0;
   width: 100%;
   padding: 15px 0;
+  font-size: 0.8rem;
+  margin-top: 150px;
+}
+
+.partialFooter {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: solid thin;
+  border-color: #888888;
+  color: #888888;
+  width: 100%;
+  /* padding: 15px 0; */
   font-size: 0.8rem;
   margin-top: 150px;
 }
@@ -85,6 +101,14 @@ p a {
   font-size: 1.1rem;
 }
 
+.directoryContainer {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
 .pageIntro {
   align-self: center;
 }
@@ -122,7 +146,7 @@ p a {
 
 .pdf {
   width: 100%;
-  height: 600px;
+  height: 800px;
   margin: 0;
   margin-top: 8px;
   padding: 0;
@@ -151,6 +175,15 @@ p a {
 
 .contentText {
   margin: 4px 0;
+}
+
+.backButton {
+  margin: 8px 0;
+  font-size: 1.5rem;
+}
+
+.backButton a {
+  text-decoration: none;
 }
 
 .leftText {
