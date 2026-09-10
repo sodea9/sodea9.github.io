@@ -89,6 +89,10 @@ p a {
   color: var(--secondary);
 }
 
+.secondaryText a {
+  color: var(--secondary);
+}
+
 .icon {
   color: var(--primary);
 }
